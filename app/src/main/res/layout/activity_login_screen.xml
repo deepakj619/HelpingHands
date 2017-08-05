@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/logo"
+    tools:context="helpinghand.com.helpinghands.LoginScreen"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="8dp">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:layout_marginTop="25dp"
+            android:id="@+id/etEmail"
+            android:textColorHint="#000"
+            android:hint="Email" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:textColorHint="#000"
+            android:layout_marginTop="13dp"
+            android:id="@+id/etPassword"
+            android:hint="Password"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+            <Button
+                android:text="Login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="#f75009"
+                android:textStyle="bold"
+                android:background="@drawable/mybutton"
+                android:id="@+id/bLogin"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold"
+                    android:background="@android:color/transparent"
+                    android:onClick="register"
+                    android:textSize="18dp"
+                    android:id="@+id/RegisterUserButton"
+                    android:text="Register"
+                    android:layout_gravity="center"/>
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold"
+                    android:background="@android:color/transparent"
+                    android:onClick="forgotpass"
+                    android:textSize="18dp"
+                    android:id="@+id/forgot_password"
+                    android:text="Forgot password"
+                    android:layout_gravity="center"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
+
+

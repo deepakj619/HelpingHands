@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/amilogo1"
+    android:id="@+id/activity_register_orphange"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="helpinghand.com.helpinghands.RegisterOrphanage"
+    >
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Please enter your details"
+        android:ems="10"
+        android:id="@+id/editText2"
+        android:textSize="30sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:fontFamily="sans-serif"
+        android:textColor="@android:color/background_dark" />
+
+    <Button
+        android:text="Register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="111dp"
+        android:id="@+id/register"
+        android:textSize="18sp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="43dp"
+        android:onClick="onClick (Register_orphange)"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="normal|bold"
+        android:background="@android:color/darker_gray" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/etEmailId"
+        android:hint="Enter your valid mail "
+        android:layout_below="@+id/srn"
+        android:layout_marginTop="24dp"
+        android:layout_alignParentStart="true"
+        android:textColorHint="#0000FF"
+        android:layout_alignParentEnd="true"
+        android:textStyle="normal|bold"
+        android:textSize="24sp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/Password"
+        android:hint="Enter Password"
+        android:layout_below="@+id/etEmailId"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="28dp"
+        android:textColorHint="#0000FF"
+        android:layout_alignParentEnd="true"
+        android:textSize="24sp"
+        android:textStyle="normal|bold" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/Confirm"
+        android:hint="Confirm password"
+        android:layout_below="@+id/Password"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="24dp"
+        android:textColorHint="#0000FF"
+        android:layout_alignParentEnd="true"
+        android:textSize="24sp"
+        android:textStyle="normal|bold" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:layout_marginTop="25dp"
+        android:id="@+id/srn"
+        android:hint="Society registration number"
+        android:textColorHint="#0000FF"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        android:textStyle="normal|bold"
+        android:layout_below="@+id/editText2"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>
