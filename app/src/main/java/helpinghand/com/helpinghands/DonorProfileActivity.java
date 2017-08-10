@@ -16,6 +16,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -31,6 +32,8 @@ import java.util.ArrayList;
 
 public class DonorProfileActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
+
+
     private ListView listView;
     private FirebaseDatabase firebaseDatabase;
     private ArrayList<DonationData> donationDatas=new ArrayList<DonationData>();
@@ -72,6 +75,14 @@ public class DonorProfileActivity extends AppCompatActivity
 
                 };
                 listView.setAdapter(adapter);
+                listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+                    @Override
+                    public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+
+                        Intent intent=new Intent(DonorProfileActivity.this,ForgotPasswordActivity.class);
+                        startActivity(intent);
+                    }
+                });
                 return;
 
 
@@ -158,4 +169,5 @@ public class DonorProfileActivity extends AppCompatActivity
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
+
 }

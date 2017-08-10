@@ -16,6 +16,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -65,14 +66,20 @@ public class OrphanProfileActivity extends AppCompatActivity
 
                         tv.setTextSize(TypedValue.COMPLEX_UNIT_DIP, 25);
                         tv.setTextColor(Color.BLACK);
-
-                        // Return the view
                         return view;
                     }
 
 
                 };
                 listView.setAdapter(adapter);
+                listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+                    @Override
+                    public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+
+                        Intent intent=new Intent(OrphanProfileActivity.this,ForgotPasswordActivity.class);
+                        startActivity(intent);
+                    }
+                });
                 return;
 
 
